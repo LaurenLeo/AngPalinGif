@@ -1,0 +1,105 @@
+/*font-family: 'Amatic SC', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Comfortaa', cursive;*/
+.paliClass {
+  background-image: url();
+}
+
+#top{
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+}
+
+#palHeader {
+  font-family: 'Shrikhand', cursive;
+  font-size: 500%;
+  letter-spacing: 3px;
+}
+
+input[type=text] {
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+
+#goBtn {
+  padding: 12px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color:	#42d162;
+  color: black;
+  font-size: 22px;
+}
+
+#lists{
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+li{
+  display: block;
+}
+
+
+#pali{
+  padding-left: 0;
+  padding-right: 44px;
+}
+.yes, .no{
+  padding: 12px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+
+  color: black;
+  font-size: 15px;
+}
+
+.yes{
+  background-color: #00ced1;
+}
+
+.no{
+  background-color: #ff3366;
+}
+
+.item.ng-enter{
+  -webkit-animation:scaleUp 0.5s both ease-in;
+    -moz-animation:scaleUp 0.5s both ease-in;
+    animation:scaleUp 0.5s both ease-in;
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+@-moz-keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        -moz-transform: scale(0.8);
+    }
+}
+@-webkit-keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        -webkit-transform: scale(0.8);
+    }
+}

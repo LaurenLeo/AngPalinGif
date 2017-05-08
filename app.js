@@ -13,14 +13,14 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
 	.directive('isPali', function() {
 		return {
 			restrict: 'E',
-			template: '<li ng-repeat="word in isPalindrome" ng-click="setPaliSearch(word)">{{ word }}</li>',
+			template: '<li ng-repeat="word in isPalindrome" class="item" ng-click="setPaliSearch(word)"><button class="yes">{{ word }}</button></li>',
 			replace: true
 		}
 	})
 	.directive('notPali', function() {
 		return {
 			restrict: 'E',
-			template: '<li ng-repeat="word in isNotPalindrome" ng-click="setPaliSearch(word)"><button>{{ word }}</button></li>',
+			template: '<li ng-repeat="word in isNotPalindrome" class="item" ng-click="setPaliSearch(word)"><button class="no">{{ word }}</button></li>',
 			replace: true
 		}
 	});

@@ -5,6 +5,7 @@ angular.module('app')
 
 		$scope.isNotPalindrome = [];
 
+		$scope.pageClass = "paliPage";
 
 		$scope.checkPalindrome = function(word){
 			var pureWord = word.replace(/[^A-Z0-9]/ig, "").toLowerCase();

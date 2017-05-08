@@ -1,16 +1,20 @@
-<h1>Palindromes</h1>
 
-<form>
-	<input type="text" ng-model="word" placeholder="Enter a word!"/>
-	<button type="submit" ng-click="checkPalindrome(word)">Go!</button>
-</form>
+<div id="top">
+		<h1 id="palHeader">Palindromes</h1>
 
-<p>{{ checked }}</p>
+		<form>
+			<input type="text" ng-model="word" placeholder="Enter a word!"/>
+			<button id="goBtn" type="submit" ng-click="checkPalindrome(word)">Go!</button>
+		</form>
 
-<ul>
-	<is-pali></is-pali>
-</ul>
+		<p>{{ checked }}</p>
+</div>
+<div id="lists">
+		<ul id="pali">
+			<is-pali></is-pali>
+		</ul>
 
-<ul>
-	<not-pali></not-pali>
-</ul>
+		<ul id="notPali">
+			<not-pali></not-pali>
+		</ul>
+</div>
