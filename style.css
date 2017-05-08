@@ -43,12 +43,14 @@ input[type=text] {
 
 #lists{
   text-align: center;
+  position: relative;
 }
 
 ul {
   list-style: none;
   display: inline-block;
   text-align: center;
+  height: 100%;
 }
 
 li{
@@ -66,7 +68,6 @@ li{
   box-sizing: border-box;
   border: none;
   border-radius: 5px;
-
   color: black;
   font-size: 15px;
 }
