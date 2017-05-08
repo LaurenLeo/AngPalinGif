@@ -10,13 +10,17 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
 		})
 		.otherwise('/palindrome');
 	})
-	// .directive('name', function() {
-	// 	return {
-
-	// 	}
-	// })
-	// .directive('name2', function() {
-	// 	return {
-
-	// 	}
-	// });
+	.directive('isPali', function() {
+		return {
+			restrict: 'E',
+			template: '<li ng-repeat="word in isPalindrome" ng-click="setPaliSearch(word)">{{ word }}</li>',
+			replace: true
+		}
+	})
+	.directive('notPali', function() {
+		return {
+			restrict: 'E',
+			template: '<li ng-repeat="word in isNotPalindrome" ng-click="setPaliSearch(word)">{{ word }}</li>',
+			replace: true
+		}
+	});

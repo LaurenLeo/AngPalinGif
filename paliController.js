@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('paliController', function($scope){
+	.controller('paliController', function($scope, paliService){
 
 		$scope.isPalindrome = [];
 
@@ -17,5 +17,9 @@ angular.module('app')
 				$scope.isNotPalindrome.push(pureWord);
 			};
 		};
+
+		$scope.setPaliSearch = function(word){
+			paliService.setSearch(word);
+		}
 
 	});

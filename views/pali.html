@@ -2,11 +2,15 @@
 
 <form>
 	<input type="text" ng-model="word" placeholder="Enter a word!"/>
-	<button type="button" ng-click="checkPalindrome(word)">Go!</button>
+	<button type="submit" ng-click="checkPalindrome(word)">Go!</button>
 </form>
 
 <p>{{ checked }}</p>
 
 <ul>
-	<li ng-repeat="word in isPalindrome">{{ word }}</li>
+	<is-pali></is-pali>
+</ul>
+
+<ul>
+	<not-pali></not-pali>
 </ul>
