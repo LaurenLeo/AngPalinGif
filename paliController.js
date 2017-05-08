@@ -16,6 +16,8 @@ angular.module('app')
 				$scope.checked = word + " is NOT a palindrome!";
 				$scope.isNotPalindrome.push(pureWord);
 			};
+
+			$scope.word = null;
 		};
 
 		$scope.setPaliSearch = function(word){

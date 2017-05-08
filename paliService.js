@@ -9,7 +9,6 @@ angular.module('app')
 
 		function setSearch(word){
 			searchInput = word;
-			console.log(searchInput);
 		}
 
 		function getSearch() {
