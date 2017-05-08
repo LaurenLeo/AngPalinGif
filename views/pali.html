@@ -1,0 +1,12 @@
+<h1>this is a test</h1>
+
+<form>
+	<input type="text" ng-model="word" placeholder="Enter a word!"/>
+	<button type="button" ng-click="checkPalindrome(word)">Go!</button>
+</form>
+
+<p>{{ checked }}</p>
+
+<ul>
+	<li ng-repeat="word in isPalindrome">{{ word }}</li>
+</ul>
