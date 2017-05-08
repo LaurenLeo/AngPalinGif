@@ -2,4 +2,8 @@
   <h1>Giphys</h1>
   <a href="#!/pali">Start Over</a>
 </div>
-<img ng-repeat="gif in obj | limitTo: 24" ng-src="{{gif.images.original.url}}">
+<div id="gallery">
+  <div ng-repeat="gif in obj | limitTo: 24" class="smallGif">
+    <img ng-src="{{gif.images.original.url}}">
+  </div>
+</div>
