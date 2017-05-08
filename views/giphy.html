@@ -1,1 +1,3 @@
-{{obj}}
+<h1>Giphys</h1>
+
+<img ng-repeat="gif in obj | limitTo: 24" ng-src="{{gif.images.original.url}}">

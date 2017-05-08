@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('paliController', function($scope, paliService){
+	.controller('paliController', function($scope, paliService, $location){
 
 		$scope.isPalindrome = [];
 
@@ -22,6 +22,7 @@ angular.module('app')
 
 		$scope.setPaliSearch = function(word){
 			paliService.setSearch(word);
+			$location.path('/giphy')
 		}
 
 	});

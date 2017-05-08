@@ -1,7 +1,8 @@
 angular.module('app')
 	.controller('apiController', function($scope, $http, paliService, apiService) {
 		apiService.setJson(paliService.getSearch()).then(function() {
-			$scope.obj = apiService.getJson();
+			var results = apiService.getJson();
+			$scope.obj = results.data.data;
 			console.log($scope.obj);
 		});
 

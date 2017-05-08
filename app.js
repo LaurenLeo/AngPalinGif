@@ -20,7 +20,7 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
 	.directive('notPali', function() {
 		return {
 			restrict: 'E',
-			template: '<li ng-repeat="word in isNotPalindrome" ng-click="setPaliSearch(word)">{{ word }}</li>',
+			template: '<li ng-repeat="word in isNotPalindrome" ng-click="setPaliSearch(word)"><button>{{ word }}</button></li>',
 			replace: true
 		}
 	});
