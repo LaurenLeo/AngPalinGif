@@ -10,8 +10,8 @@ font-family: 'Comfortaa', cursive;*/
   text-align: center;
 }
 
-nav{
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
 #palHeader {
@@ -102,4 +102,30 @@ li{
         opacity: 0.3;
         -webkit-transform: scale(0.8);
     }
+}
+
+#gallery {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.smallGif {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.smallGif img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
