@@ -3,7 +3,7 @@
   <a href="#!/pali"><button id="startBtn">Start Over</button></a>
 </div>
 <div id="gallery">
-  <div ng-repeat="gif in obj | limitTo: 24" class="smallGif">
+  <div ng-repeat="gif in obj" class="smallGif">
     <img ng-src="{{gif.images.original.url}}">
   </div>
 </div>
